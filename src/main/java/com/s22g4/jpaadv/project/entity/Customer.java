@@ -38,4 +38,8 @@ public class Customer {
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     private List<Account> accountList = new ArrayList<>();
 
+    public void add(Account account){
+        accountList.add(account);
+    }
+
 }
